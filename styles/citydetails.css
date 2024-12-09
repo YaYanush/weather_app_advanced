@@ -1,0 +1,151 @@
+:root {
+  --body-background-dark: #0d1117;
+  --body-background-light: #fff;
+  --body-background-default: var(--body-background-light);
+  --components-background-dark: #4f4f4f;
+  --components-background-light: #fff;
+  --components-background-default: var(--components-background-light);
+  --card-background-dark: #2e3035;
+  --card-background-light: rgba(71, 147, 255, 0.2);
+  --card-background-default: var(--card-background-light);
+  --card-shadow-dark: 0px 3px 20px rgba(5, 5, 5, 0.28);
+  --card-shadow-light: 0px 3px 20px rgba(147, 144, 144, 0.28);
+  --card-shadow-default: var(--card-shadow-light);
+  --text-color-dark: #fff;
+  --text-color-light: #000;
+  --text-color-default: var(--text-color-light);
+}
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background: var(--components-background-default);
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 20px;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.top__block svg {
+  width: 119px;
+  height: 119px;
+}
+.top__block .this__temp {
+  font-size: 96px;
+  font-weight: 500;
+  color: #4793ff;
+}
+.top__block .this__day_name {
+  font-size: 40px;
+  color: var(--text-color-default);
+}
+
+.bottom__block .this__time,
+.bottom__block .this__city {
+  color: #939cb0;
+  font-size: 25px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.item:last-of-type {
+  margin-bottom: 0;
+}
+.item .indicator,
+.item .indicator__name {
+  margin-right: 20px;
+}
+.item .indicator {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+  border-radius: 50%;
+}
+.item .indicator__name,
+.item .indicator__value {
+  font-size: 14px;
+}
+.item .indicator__name {
+  color: #939cb0;
+}
+.item .indicator__value {
+  color: var(--text-color-default);
+}
+
+.this__day_info {
+  position: relative;
+  padding: 40px;
+  max-width: 750px;
+  width: 100%;
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 20px;
+  background: var(--components-background-default);
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  margin-top: 5%;
+  background-color: var(--components-background-default);
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 0 0 20px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-background-default);
+  border-radius: 10px;
+  padding: 10px;
+  width: 149px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card .day {
+  margin-bottom: 7px;
+  font-size: 18px;
+  color: var(--text-color-default);
+}
+.card .day__info {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #939cb0;
+}
+.card .img {
+  margin-bottom: 12px;
+}
+.card .temp__day {
+  font-size: 18px;
+  color: var(--text-color-default);
+}
+.card .temp__night {
+  font-size: 13px;
+  color: #939cb0;
+  margin-bottom: 6px;
+}
+.card .info {
+  font-size: 13px;
+  color: #939cb0;
+}
+.card:hover {
+  box-shadow: var(--card-shadow-default);
+}
+
+/*# sourceMappingURL=citydetails.css.map */

@@ -1,0 +1,142 @@
+@import 'variables.scss';
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background: var(#{--components-background-default});
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+  .this__temp {
+    font-size: 96px;
+    font-weight: 500;
+    color: $primary-color;
+  }
+  .this__day_name {
+    font-size: 40px;
+    color: var(#{--text-color-default});
+  }
+}
+
+.bottom__block {
+  .this__time,
+  .this__city {
+    color: $base-color;
+    font-size: 25px;
+  }
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .indicator,
+  .indicator__name {
+    margin-right: 20px;
+  }
+
+  .indicator {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    border-radius: 50%;
+  }
+
+  .indicator__name,
+  .indicator__value {
+    font-size: 14px;
+  }
+  .indicator__name {
+    color: $base-color;
+  }
+  .indicator__value {
+    color: var(#{--text-color-default});
+  }
+}
+
+.this__day_info {
+  position: relative;
+  padding: 40px;
+  max-width: 750px;
+  width: 100%;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background: var(#{--components-background-default});
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  margin-top: 5%;
+  background-color: var(#{--components-background-default});
+  box-shadow: $box-shadow;
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(#{--card-background-default});
+  border-radius: 10px;
+  padding: 10px;
+  width: 149px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .day {
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: var(#{--text-color-default});
+  }
+
+  .day__info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: $base-color;
+  }
+  .img {
+    margin-bottom: 12px;
+  }
+
+  .temp__day {
+    font-size: 18px;
+    color: var(#{--text-color-default});
+  }
+
+  .temp__night {
+    font-size: 13px;
+    color: $base-color;
+    margin-bottom: 6px;
+  }
+  .info {
+    font-size: 13px;
+    color: $base-color;
+  }
+
+  &:hover {
+    box-shadow: var(#{--card-shadow-default});
+  }
+}
